@@ -308,6 +308,8 @@ for i in range(len(cable_list1)):
     print(cable)
     if len(cable.index.values) > 0:
         cable_list1.loc[cable.index, 'dU'] = cable_list1.loc[cable.index, 'dU']+ cable_list1.loc[i,'N_PYLON2']
+        if len(cable.index.values) > 0:
+            cable_list1.loc[cable.index, 'dU'] = cable_list1.loc[cable.index, 'dU'] + cable_list1.loc[i, 'N_PYLON2'
 
 
 
